@@ -43,25 +43,54 @@ fn main() {
     // let x = five(1);
     // println!("The value of x is {}", x)
 
-    // if
-    let number = 3;
-    if number == 1 {
-        println!("The value of number is 1")
-    } else if number == 2 {
-        println!("The value of number is 2")
-    } else {
-        println!("The value of number is not 1 and 2")
+    // // if
+    // let number = 3;
+    // if number == 1 {
+    //     println!("The value of number is 1")
+    // } else if number == 2 {
+    //     println!("The value of number is 2")
+    // } else {
+    //     println!("The value of number is not 1 and 2")
+    // }
+    // // if多分支用match重构
+    // match number {
+    //     1 => println!("The value of number is 1"),
+    //     2 => println!("The value of number is 2"),
+    //     _ => println!("The value of number is not 1 and 2")
+    // }
+    // // if表达式放在等号右边
+    // let value = true;
+    // let number = if value { 1 } else { 2 };
+    // println!("The value of number is {}", number);
+
+    // loop循环
+    let mut count = 0;
+    let result = loop {
+        count += 1;
+
+        if count == 10 {
+            break count * 2;
+        }
+    };
+    println!("The result is {}", result);
+
+    // while循环
+    while count != 0 {
+        println!("{}!", count);
+        count = count - 5;
     }
-    // if多分支用match重构
-    match number {
-        1 => println!("The value of number is 1"),
-        2 => println!("The value of number is 2"),
-        _ => println!("The value of number is not 1 and 2")
+    println!("The end of while");
+
+    // for循环
+    let a = [1, 2, 3, 4, 5];
+    for ele in a.iter() {
+        println!("The value is {}", ele)
     }
-    // if表达式放在等号右边
-    let value = true;
-    let number = if value { 1 } else { 2 };
-    println!("The value of number is {}", number);
+    // for range
+    for number in (1 .. 4).rev() {
+        println!("{}", number);
+    }
+    println!("END!!!");
 }
 
 // fn five(x: i32) -> i32 {
