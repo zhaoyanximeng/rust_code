@@ -35,4 +35,11 @@ fn main() {
     // let a: [i32; 5] = [1, 2, 3, 4, 5];
     // let b = [3; 5];
     // println!("{}, {}", a[0], b[2])
+
+    // 函数
+    another_function(3, 4)
+}
+
+fn another_function(x: i32, y: i32) {
+    println!("The value of x is: {}, {}", x, y);
 }
