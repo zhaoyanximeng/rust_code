@@ -36,10 +36,18 @@ fn main() {
     // let b = [3; 5];
     // println!("{}, {}", a[0], b[2])
 
-    // 函数
-    another_function(3, 4)
+    // // 函数
+    // another_function(3, 4)
+
+    // 语句和表达式
+    let x = five(1);
+    println!("The value of x is {}", x)
 }
 
-fn another_function(x: i32, y: i32) {
-    println!("The value of x is: {}, {}", x, y);
+fn five(x: i32) -> i32 {
+    x + 5
 }
+
+// fn another_function(x: i32, y: i32) {
+//     println!("The value of x is: {}, {}", x, y);
+// }
