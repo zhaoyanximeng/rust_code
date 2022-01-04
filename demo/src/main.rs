@@ -22,8 +22,12 @@ fn main() {
     // let x = 5; //i32
     // let y = 4.1; //f64
 
-    // 字符声明
-    let x = 'z';
-    let y: char = '$';
-    let z = '😭';
+    // // 字符声明
+    // let x = 'z';
+    // let y: char = '$';
+    // let z = '😭';
+
+    // // 复合类型Tuple
+    // let tup: (i32, f64, u8) = (500, 6.4, 1);
+    // println!("{}, {}, {}", tup.0, tup.1, tup.2);
 ;}
