@@ -18,7 +18,12 @@ fn main() {
     // let guess: u32 = "42".parse().expect("Not a number");
     // println!("{}", guess);
 
-    // 默认类型
-    let x = 5; //i32
-    let y = 4.1; //f64
-}
+    // // 默认类型
+    // let x = 5; //i32
+    // let y = 4.1; //f64
+
+    // 字符声明
+    let x = 'z';
+    let y: char = '$';
+    let z = '😭';
+;}
