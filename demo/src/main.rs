@@ -39,14 +39,34 @@ fn main() {
     // // 函数
     // another_function(3, 4)
 
-    // 语句和表达式
-    let x = five(1);
-    println!("The value of x is {}", x)
+    // // 语句和表达式
+    // let x = five(1);
+    // println!("The value of x is {}", x)
+
+    // if
+    let number = 3;
+    if number == 1 {
+        println!("The value of number is 1")
+    } else if number == 2 {
+        println!("The value of number is 2")
+    } else {
+        println!("The value of number is not 1 and 2")
+    }
+    // if多分支用match重构
+    match number {
+        1 => println!("The value of number is 1"),
+        2 => println!("The value of number is 2"),
+        _ => println!("The value of number is not 1 and 2")
+    }
+    // if表达式放在等号右边
+    let value = true;
+    let number = if value { 1 } else { 2 };
+    println!("The value of number is {}", number);
 }
 
-fn five(x: i32) -> i32 {
-    x + 5
-}
+// fn five(x: i32) -> i32 {
+//     x + 5
+// }
 
 // fn another_function(x: i32, y: i32) {
 //     println!("The value of x is: {}, {}", x, y);
